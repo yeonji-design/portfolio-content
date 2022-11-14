@@ -13,6 +13,8 @@ nav {
     font-family: 'Poppins', sans-serif;
     /*background-color: #eaeaea;*/
     padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav li{
@@ -96,6 +98,12 @@ h3{
     color: #555;
 }
 
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -123,9 +131,6 @@ h3{
 
 
 img {
-    padding: 10px;
-    width:fit-content;
-    height:fit-content;
     /*border: 1px solid #777;
     margin: 10px;*/
 }
@@ -157,6 +162,8 @@ img:hover {
 .gallery-flex{
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
+    column-gap: 10px;
 }
 .gallery-grid > figure{
     overflow: hidden;
@@ -172,7 +179,6 @@ img:hover {
     .gallery-flex{
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
     }
     .gallery-flex figure{
         width: 300px;
