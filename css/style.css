@@ -136,10 +136,11 @@ img:hover {
 
 .profile-img{
     width: 300px;
+    height: 300px;
 }
 
 .project-hero{
-    display: grid;
+    /*display: grid;*/
 }
 
 .col-3070{
@@ -157,6 +158,15 @@ img:hover {
     display: flex;
     flex-direction: column;
 }
+.gallery-grid > figure{
+    overflow: hidden;
+}
+
+.home-content{
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
 
 @media screen and (min-width: 700px){
     .gallery-flex{
@@ -170,23 +180,15 @@ img:hover {
         object-fit: cover;
     }
     .project-hero{
-        grid-template-columns: 2fr 3fr;
-        align-items: center;
+        /*grid-template-columns: 2fr 3fr;
+        align-items: center;*/
     }
     .col-3070{
         grid-template-columns: 3fr 7fr;
         column-gap: 10px;
     }
 }
-.gallery-grid > figure{
-    overflow: hidden;
-}
 
-.home-content{
-    font-size: 24px;
-    margin-bottom: 20px;
-    line-height: 30px;
-}
 
 @media (prefers-reduced-motion) {
     .hi{
