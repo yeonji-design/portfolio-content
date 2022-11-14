@@ -65,8 +65,8 @@ footer{
 }
 
 .intro {
-    height: 40vh;
-    padding-top: 150px;
+    height: 60vh;
+    padding-top: 50px;
     background-image: url('../images/giphy.gif');
     background-position: 50% 25%;
     background-repeat: no-repeat;
@@ -176,6 +176,10 @@ img:hover {
 }
 
 @media screen and (min-width: 700px){
+    .intro {
+        height: 40vh;
+        padding-top: 150px;
+    }
     .gallery-flex{
         flex-direction: row;
         flex-wrap: wrap;
