@@ -81,15 +81,6 @@ h1{
 }
 
 h2{
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 32px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-h3{
     font-size: 20px;
     font-weight: bold;
     line-height: 24px;
@@ -196,6 +187,11 @@ img:hover {
     .col-3070{
         grid-template-columns: 3fr 7fr;
         column-gap: 10px;
+    }
+    figure img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
     }
 }
 
