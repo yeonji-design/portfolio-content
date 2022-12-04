@@ -43,6 +43,7 @@ nav .active{
 
 
 body{
+    background-color: white;
     display: grid;
     row-gap: 30px;
 }
@@ -141,10 +142,6 @@ img:hover {
     padding-bottom: 20px;
 }
 
-.project-hero{
-    /*display: grid;*/
-}
-
 .col-3070{
     display: grid;
     column-gap: 20px;
@@ -199,6 +196,7 @@ form button{
 .skip a{
     position: relative;
     font-family: 'Poppins';
+    color: black;
     background: white;
     padding: 8px;
     -webkit-transition: top 1s ease-out;
@@ -209,6 +207,7 @@ form button{
 }
   
 .skip a:focus{
+    color: black;
     background: white;
     top: 0;
     left: 0;
@@ -388,10 +387,6 @@ form button{
         width: 300px;
         height: 300px;
         object-fit: cover;
-    }
-    .project-hero{
-        /*grid-template-columns: 2fr 3fr;
-        align-items: center;*/
     }
     .col-3070{
         grid-template-columns: 3fr 7fr;
