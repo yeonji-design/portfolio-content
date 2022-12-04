@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
@@ -33,14 +33,18 @@ nav a:link{
 }
 
 nav .active{
-    color: #FF0000;
     font-weight: bold;
     /*text-decoration: underline;*/
+}
+
+.nav-desktop{
+    display: none;
 }
 
 
 body{
     display: grid;
+    row-gap: 30px;
 }
 
 header{
@@ -51,13 +55,8 @@ main {
     padding: 40px;
 }
 
-aside {
-    grid-row: 3 / 4;
-    padding: 40px;
-}
-
 footer{
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
     height: 60px;
     text-align: center;
     line-height: 60px;
@@ -67,6 +66,7 @@ footer{
 .intro {
     height: 60vh;
     padding-top: 50px;
+    margin-bottom: 100px;
     background-image: url('../images/giphy.gif');
     background-position: 50% 25%;
     background-repeat: no-repeat;
@@ -74,10 +74,14 @@ footer{
 
 h1{
     font-size: 40px;
-    font-weight: bold;
+    font-weight: medium;
     line-height: 48px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.intro h1{
+    font-weight: bolder;
 }
 
 h2{
@@ -100,7 +104,8 @@ figure img{
 }
 
 .hi{
-    animation: bounce 1s ease infinite;
+    animation: bounce 1s ease;
+    z-index: 1;
 }
 
 @keyframes bounce{
@@ -133,6 +138,7 @@ img:hover {
 .profile-img{
     width: 300px;
     height: 300px;
+    padding-bottom: 20px;
 }
 
 .project-hero{
@@ -141,7 +147,13 @@ img:hover {
 
 .col-3070{
     display: grid;
-    column-gap: 10px;
+    column-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.col-3070 h1{
+    position: relative;
+    top: 30%;
 }
 
 .gallery-flex img{
@@ -166,10 +178,203 @@ img:hover {
     line-height: 30px;
 }
 
-@media screen and (min-width: 700px){
+input, textarea{
+    border: none;
+    border-bottom: 2px solid black;
+}
+form button{
+    margin-top: 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 12px 48px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Skip to content */
+.skip a{
+    font-family: 'Poppins';
+    background: white;
+    left: 0;
+    padding: 8px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    /*Your code here - position relative to the parent */
+    position: relative;
+    /*Your code here - place 500px left and 40px higher */;
+    left: 500px;
+    top: -40px;
+}
+  
+.skip a:focus{
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* Navigation */
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  .navbar .menu-items .active a{
+    font-weight: bolder;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    background-color: white;
+    z-index: 100;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+    z-index: 5;
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+/* tablet */
+@media screen and (min-width: 400px){
+    .intro{
+        height: 50vh;
+        margin-bottom: 50px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 900px){
+    .navbar{
+        display: none;
+    }
+    .nav-desktop{
+        display: inline;
+    }
     .intro {
         height: 40vh;
         padding-top: 150px;
+        margin-bottom: 20px;
     }
     .gallery-flex{
         flex-direction: row;
@@ -186,13 +391,21 @@ img:hover {
     }
     .col-3070{
         grid-template-columns: 3fr 7fr;
-        column-gap: 10px;
     }
     figure img{
         width: 400px;
         height: 400px;
         object-fit: cover;
     }
+    .gallery{
+        grid-template-columns: 80% 20%;
+    }
+    .gallery aside {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        padding: 40px;
+    }
+    
 }
 
 
@@ -200,4 +413,8 @@ img:hover {
     .hi{
         animation: none;
     }
+    .skip a{
+        -webkit-transition: none;
+        transition: none;
+      }
 }

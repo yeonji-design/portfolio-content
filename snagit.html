@@ -10,13 +10,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-	<title>Snagit</title>
+    <link rel="icon" href="images/yj.png">
+    <title>Snagit</title>
+
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZ3THNP9KX"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-CZ3THNP9KX');
+	</script>
 </head>
 
 <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
 		<nav>
-			<ul>
+            <div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+					  <span class="line line1"></span>
+					  <span class="line line2"></span>
+					  <span class="line line3"></span>
+					</div>
+				  <div class="menu-items">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="intuit.html">Intuit</a></li>
+					<li class="active"><a href="snagit.html">Snagit</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				  </div>
+				</div>
+			</div>
+			<ul class="nav-desktop">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="intuit.html">Intuit</a></li>
 				<li class="active"><a href="snagit.html">Snagit</a></li>
@@ -25,15 +53,13 @@
 		</nav>
 	</header>
 
-	<main>
-		<div>
-            <h1>Snagit: Creating new interactive video markup tool</h1>
+	<main id="main">
+		<div class="col-3070">
             <figure>
                 <img src="images/snagit-overview.png" alt="Snagit overview">
             </figure>
+            <h1>Snagit: Creating new interactive video markup tool</h1>
         </div>
-	</main>
-    <aside>
         <div>
             <h2>What is Snagit?</h2>
             <p>Snagit is screen capture and screen recording software for Windows and macOS. It is created and developed by TechSmith and was first launched in 1990. </p>
@@ -45,27 +71,24 @@
         <div>
             <h2>Research Findings</h2>
             <p>
-                Our target users group are those who do not have that much video editing skills, so keeping it as ‘simple to use’ as possible is important.<br>
-                Fun & entertaining tools to engage their viewers.<br>
-                Users want to draw viewers’ attention to specific content.<br>
+                Our target users group are those who do not have that much video editing skills, so keeping it as ‘simple to use’ as possible is important. 
+                Also, they wanted fun & entertaining tools to engage their viewers. Finally, Users want to draw viewers’ attention to specific content.
+                Based on this research findings, we designed persona of our desired solution. 
+                Our main persona would be a person who is not very experienced with video editing.
+                In addition, they would be a type of person who work on short videos either for work or entertainment.
+                They would also mainly use it for internal and external communication at workplace
             </p>
-        </div>
-        <div>
-            <h2>Persona</h2>
-            <p>Not very experienced with video editing<br>
-                Work on short videos<br>
-                Mainly use it for internal and external communication at workplace</p>
         </div>
 		<div>
             <h2>Ideation</h2>
             <p>Using crazy 8’s we started brainstorming and sketched different ideas based on key findings and goals. 
-                Different levels of low fidelity sketches were created to test out our concept and assumptions. 
-            </p><br><br>
-            <p><span class="bold">Fun & Entertaining</span>: Including stickers and emojis to include an element of joy.</p>
-            <p><span class="bold">Simple & Easy to Use</span>: Eliminating all but the most essential markup tools. Combining multiple functions and using single track timeline. </p>
-            <p><span class="bold">Directing Viewer's Focus</span>: Developing markup tools (arrows, text and pen) that guide viewers' attention to specific content. </p>
+                Different levels of low fidelity sketches were created to test out our concept and assumptions.
+                Fun & Entertaining: Including stickers and emojis to include an element of joy.
+                Simple & Easy to Use: Eliminating all but the most essential markup tools. Combining multiple functions and using single track timeline.
+                Directing Viewer's Focus: Developing markup tools (arrows, text and pen) that guide viewers' attention to specific content. 
+            </p>
         </div>
-    </aside>
+    </main>
 	<footer>
 		&copy;2022 Yeonji Kim
 	</footer>

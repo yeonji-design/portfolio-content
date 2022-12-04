@@ -10,13 +10,41 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/yj.png">
 	<title>Intuit</title>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZ3THNP9KX"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-CZ3THNP9KX');
+	</script>
 </head>
 
 <body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
 		<nav>
-			<ul>
+			<div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+					  <span class="line line1"></span>
+					  <span class="line line2"></span>
+					  <span class="line line3"></span>
+					</div>
+				  <div class="menu-items">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="intuit.html">Intuit</a></li>
+					<li><a href="snagit.html">Snagit</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				  </div>
+				</div>
+			</div>
+			<ul class="nav-desktop">
 				<li><a href="index.html">Home</a></li>
 				<li class="active"><a href="intuit.html">Intuit</a></li>
 				<li><a href="snagit.html">Snagit</a></li>
@@ -25,16 +53,14 @@
 		</nav>
 	</header>
 
-	<main>
-		<div>
-			<h1>Product Design Internship at Intuit</h1>
+	<main id="main">
+		<div class="col-3070">
 			<figure>
 				<img src="images/intuit-overview.png" alt="Intuit Dashboard overview">
 			</figure>
+			<h1>Product Design Internship at Intuit</h1>
 		</div>
-	</main>
-	<aside>
-        <p>In summer 2022, I worked as a Product Design Intern at Intuit’s AI+Data team. During the 12 weeks, I worked on creating an AI cost management dashboard for AI leaders at Intuit.</p>
+		<p>In summer 2022, I worked as a Product Design Intern at Intuit’s AI+Data team. During the 12 weeks, I worked on creating an AI cost management dashboard for AI leaders at Intuit.</p>
 		<div>
 			<h2>Background</h2>
 			<p>
@@ -57,7 +83,8 @@
 				The needs of contributors and leaders would be different: At this stage, the user group that needs cost information now is leaders.
 			</p>
 		</div>
-	</aside>
+	</main>
+        
 	<footer>
 		&copy;2022 Yeonji Kim
 	</footer>
