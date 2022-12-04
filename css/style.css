@@ -165,6 +165,8 @@ img:hover {
 .gallery-flex{
     display: flex;
     flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
     row-gap: 30px;
     column-gap: 10px;
 }
