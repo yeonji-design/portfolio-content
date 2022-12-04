@@ -60,7 +60,7 @@ footer{
     height: 60px;
     text-align: center;
     line-height: 60px;
-    /*background-color: #eaeaea;*/
+    background-color: white;
 }
 
 .intro {
@@ -195,23 +195,25 @@ form button{
 
 /* Skip to content */
 .skip a{
+    position: relative;
     font-family: 'Poppins';
     background: white;
-    left: 0;
     padding: 8px;
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
-    z-index: 1;
-    /*Your code here - position relative to the parent */
-    position: relative;
-    /*Your code here - place 500px left and 40px higher */;
+    z-index: -1;
     left: 500px;
-    top: -40px;
+    top: -50px;
 }
   
 .skip a:focus{
-    left: 0;
+    background: white;
     top: 0;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
     position: absolute;
 }
 
